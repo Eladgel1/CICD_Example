@@ -22,6 +22,9 @@ jobs:
           name: run tests
           command: npm run test
       - run: 
-          name: run linter
+          name: run lint
           command: npm run lint
+      - run:
+          name: deploy app
+          command: curl "https://api.render.com/deploy/srv-cpuq7dlds78s73e2iupg?key=PODLyEgpOL0"
   
