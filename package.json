@@ -4,9 +4,23 @@
   "description": "CICD Example",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodeman src/index.js",
+    "test": "mocha tests/*.spec.js",
+    "lint": "eslint src/*"
   },
   "type": "module",
-  "author": "Elad Gelerenter",
-  "license": "ISC"
+  "author": "Elad Gelerenter.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.7",
+    "chai": "^5.1.1",
+    "eslint": "^9.5.0",
+    "globals": "^15.6.0",
+    "mocha": "^10.4.0",
+    "nodeman": "^1.1.2"
+  }
 }
