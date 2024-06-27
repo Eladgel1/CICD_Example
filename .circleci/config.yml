@@ -4,9 +4,13 @@ version: 2.1
 orbs:
   node: circleci/node@5
 
+workflows:
+    - build-test-lint
+
 jobs:
-  build-test-link:
-    executor: node/default
+  build-test-lint:
+    executor: 
+      name: node/default
     steps:
       - checkout
       - run:
